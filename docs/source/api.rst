@@ -65,68 +65,6 @@ Refresh Token Endpoint
     
 The access token provided during authentication expires after some time and a new one is required. The refresh token is used to generate a new access token.
 
-Campaign
---------
-
-Get Campaign Endpoint
-~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table:: 
-   :widths: 25 25 50
-   :header-rows: 1
-
-   * - URL
-     - Required Values
-     - HTTP Methods
-   * -{{url}}/api/system/campaigns
-     -   
-     - GET
-
-Information of all campaigns of logged in users are retrieved at this endpoint. The information includes the campaign id, name, user phones, services, descriptions and usable tags. The id is to be used in the future to update, delete or begin the campaign. Tags can be used to send personalized messages to users while  starting the campaign.
-
-Here is an example of the result:
-
-.. code-block:: json
-
-   {
-       "pagination": {
-           "total_items": 3,
-           "total_pages": 1,
-           "page_number": 1,
-           "has_next": false,
-           "has_previous": false,
-           "links": []
-       },
-       "result": {
-           "messages": "Campaign Successfully Retrieved",
-           "campaign-lists": [
-               {
-                   "id": 8,
-                   "name": "sample individual campaign",
-                   "user_phone": [],
-                   "services": "PHONE",
-                   "description": "This campaign is to notify users that an IPO has been opened",
-                   "usable_tags": []
-               },
-               {
-                   "id": 5,
-                   "name": "test1",
-                   "user_phone": [],
-                   "services": "SMS",
-                   "description": "test campaign",
-                   "usable_tags": ["tags_name", "tags_age"]
-               },
-               {
-                   "id": 3,
-                   "name": "Sample",
-                   "user_phone": [],
-                   "services": "PHONE",
-                   "description": "Description",
-                   "usable_tags": []
-               }
-           ]
-       }
-   }
 
 Phone Numbers
 --------------
@@ -210,6 +148,69 @@ Sample Input:
 
    {
 	"phone_sid":"b7142c5ae3b673d944d81c83bda4f5de"
+   }
+
+Campaign
+--------
+
+Get Campaign Endpoint
+~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * -{{url}}/api/system/campaigns
+     -   
+     - GET
+
+Information of all campaigns of logged in users are retrieved at this endpoint. The information includes the campaign id, name, user phones, services, descriptions and usable tags. The id is to be used in the future to update, delete or begin the campaign. Tags can be used to send personalized messages to users while  starting the campaign.
+
+Here is an example of the result:
+
+.. code-block:: json
+
+   {
+       "pagination": {
+           "total_items": 3,
+           "total_pages": 1,
+           "page_number": 1,
+           "has_next": false,
+           "has_previous": false,
+           "links": []
+       },
+       "result": {
+           "messages": "Campaign Successfully Retrieved",
+           "campaign-lists": [
+               {
+                   "id": 8,
+                   "name": "sample individual campaign",
+                   "user_phone": [],
+                   "services": "PHONE",
+                   "description": "This campaign is to notify users that an IPO has been opened",
+                   "usable_tags": []
+               },
+               {
+                   "id": 5,
+                   "name": "test1",
+                   "user_phone": [],
+                   "services": "SMS",
+                   "description": "test campaign",
+                   "usable_tags": ["tags_name", "tags_age"]
+               },
+               {
+                   "id": 3,
+                   "name": "Sample",
+                   "user_phone": [],
+                   "services": "PHONE",
+                   "description": "Description",
+                   "usable_tags": []
+               }
+           ]
+       }
    }
 
 Add Campaign Endpoint
