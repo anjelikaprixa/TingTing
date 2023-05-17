@@ -261,6 +261,10 @@ To test a voice, a sample message needs to be provided.
      - message
      - POST
      
+To test a voice, a sample message needs to be provided.
+
+
+     
 Begin Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -273,8 +277,8 @@ Begin Campaign Endpoint
      - Other Values
      - HTTP Methods
    * - {{url}}/api/system/campaigns/<campaign_id>/begin/
-     - 
-     - message,audio,voice_input, schedule_date,aud_file,priority,status
+     - message
+     - audio,voice_input, schedule_date,aud_file,priority,status
      - POST
      
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to begin.
