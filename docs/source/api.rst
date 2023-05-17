@@ -525,7 +525,7 @@ Delete Action Endpoint
      - HTTP Methods
    * - {{url}}/api/system/campaigns/number/<number_id>/delete/
      - Number ID
-     - DEL
+     - DEL 
 
  Note that the <number_id> in the URL should be replaced with the ID of the number you want to delete from the campaign.
  
