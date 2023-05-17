@@ -270,6 +270,17 @@ Begin Campaign Endpoint
 
    * - URL
      - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/test/voice/
+     - message
+     - POST
+     
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
      - Other Values
      - HTTP Methods
    * - {{url}}/api/system/campaigns/<campaign_id>/begin/
