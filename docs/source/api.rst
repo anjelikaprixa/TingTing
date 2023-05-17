@@ -265,7 +265,7 @@ Begin Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table:: 
-   :widths: 25 25 50
+   :widths: 25 25 25 50
    :header-rows: 1
 
    * - URL
