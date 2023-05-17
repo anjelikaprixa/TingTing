@@ -513,7 +513,8 @@ Sample Input:
 	"available_tags":{"tags_name": "name",“tags_age”: 25}
    }
  
- Delete Action Endpoint
+
+Delete Action Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~
 `
 .. list-table:: 
@@ -530,7 +531,7 @@ Sample Input:
  Note that the <number_id> in the URL should be replaced with the ID of the number you want to delete from the campaign.
  
  
- Number Information Endpoint
+Number Information Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table:: 
