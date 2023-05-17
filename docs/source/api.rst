@@ -30,8 +30,7 @@ Login Endpoint
 After successful authentication you will get an access token. This token needs to be provided for every further request.
 
 Sample Input:
-
-.. code-block:: Json
+::
 	{
 		"email": "test@gmail.com",
 
