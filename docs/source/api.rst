@@ -31,10 +31,10 @@ After successful authentication you will get an access token. This token needs t
 
 Sample Input:
 
-```
+.. code-block:: language
 {
 		"email": "test@gmail.com",
 
 		"password": "test"
 }
-```
+
