@@ -593,8 +593,8 @@ Send OTP Endpoint
      - Other Values
      - HTTP Methods
    * - {{url}}/api/system/send/otp
-     - number, message, sms_send_options,
-     - otp_length,otp_options
+     - number, message, sms_send_options
+     - otp_length, otp_options
      - POST
      
 By utilizing this endpoint, you can send OTPs to users by specifying the recipient's phone number as a string, along with the message containing the OTP and the desired delivery method - either through “voice” or “text” through the sms_send_option attribute. The OTP can be integrated in the message by passing it inside curly braces of the messages attribute.
