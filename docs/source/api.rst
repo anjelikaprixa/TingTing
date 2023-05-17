@@ -408,7 +408,7 @@ Numbers List Endpoint
      - 
      - GET
   
-By accessing this endpoint, you can retrieve details for all phone numbers not associated with any users and are available to buy. These details include the phone number itself, its capabilities for voice, SMS, MMS, and fax, the rate of the number, the SID, friendly name, and other relevant information
+By accessing this endpoint, you can retrieve details for all phone numbers not associated with any users and are available to buy. These details include the phone number itself, its capabilities for voice, SMS, MMS, and fax, the rate of the number, the SID, friendly name, and other relevant information.
 
 Buy Number Endpoint
 ~~~~~~~~~~~~~~~~~~~~
