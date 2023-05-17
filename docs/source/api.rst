@@ -150,7 +150,7 @@ Add Campaign Endpoint
 
 To add a campaign, you'll need to access the campaign endpoint using the HTTP POST method. The required inputs for creating a campaign include the name of the campaign, the services offered by the campaign, and the recipient phone numbers.
 
-To add individual recipients, you'll need to provide their phone number as an individual input in a list. If you want to add multiple recipients, you can send a file containing the phone numbers in or .xlsx format.
+To add individual recipients, you'll need to provide their phone number as an individual input in a list. If you want to add multiple recipients, you can send a file containing the phone numbers in .xlsx format.
 
 Sample Input:
 
