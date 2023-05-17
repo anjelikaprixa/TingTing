@@ -5,7 +5,7 @@ API
    :toctree: generated
 
    lumache
-n
+
 
 Introduction
 =============
@@ -370,5 +370,65 @@ Sample input encompassing all attributes:
 	"schedule_date": "2023-05-09T17:07",
 	"status": "failed"
    }
- 
+
+Phone Numbers
+--------------
+
+Owned Numbers Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/owned/phone_numbers
+     - 
+     - GET
+  
+By accessing this endpoint, you can retrieve details for all phone numbers associated with the currently logged-in user. These details include the phone number itself, its capabilities for voice, SMS, MMS, and fax, the rate of the number, the SID, friendly name, and other relevant information.
+
+Numbers List Endpoint
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/phone_numbers
+     - 
+     - GET
+  
+By accessing this endpoint, you can retrieve details for all phone numbers not associated with any users and are available to buy. These details include the phone number itself, its capabilities for voice, SMS, MMS, and fax, the rate of the number, the SID, friendly name, and other relevant information
+
+Buy Number Endpoint
+~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/phone_numbers
+     - SID
+     - GET
+     
+Through the POST method of this endpoint, you will be able to buy a number that is in the numbers list by providing the SID of the number you want to buy.
+
+Sample Input:
+
+ .. code-block:: json
+
+   {
+	"detail":"b7142c5ae3b673d944d81c83bda4f5de"
+   }
+   
+
  
