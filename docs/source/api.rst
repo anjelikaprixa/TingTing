@@ -181,4 +181,35 @@ Sample input with description:
        "description": "This campaign is to notify users that an IPO has been opened"
    }
 
-   
+
+Update Campaign Endpoint
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - Other Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/<campaign_id>/update
+     - Campaign ID
+     - name, services, description
+     - PUT
+
+To update a campaign, you'll need to provide the campaign ID in the URL of the API endpoint. In addition to the campaign ID, you'll also need to provide the new values that will replace the existing values in the campaign.
+
+{{url}}/api/system/campaigns/10/update/
+
+Sample Input:
+
+.. code-block:: json
+
+   {
+       	"name":"new campaign name",	
+	"services": "SMS",
+	"description": "Election campaign for 2023"
+   }
+
+Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to update.
