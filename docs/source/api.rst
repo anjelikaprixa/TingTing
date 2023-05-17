@@ -527,7 +527,7 @@ Delete Action Endpoint
      - Number ID
      - DEL 
 
- Note that the <number_id> in the URL should be replaced with the ID of the number you want to delete from the campaign.
+Note that the <number_id> in the URL should be replaced with the ID of the number you want to delete from the campaign.
  
  
 Number Information Endpoint
@@ -544,6 +544,6 @@ Number Information Endpoint
      - Number ID
      - GET
      
- Note that the <number_id> in the URL should be replaced with the ID of the number you want to retrieve the information of.
+Note that the <number_id> in the URL should be replaced with the ID of the number you want to retrieve the information of.
  
  
