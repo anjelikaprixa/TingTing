@@ -450,7 +450,6 @@ Release Number Endpoint
      
 Through the DEL method of this endpoint, you will be able to release a number that you currently own by providing the SID of the number you want to release.
 
-Note that the number you are about to release should not be affiliated in any campaign at the moment of release.
 
 Sample Input:
 
@@ -513,8 +512,8 @@ Sample Input:
  .. code-block:: json
 
    {
-	“number”: 9832123432,
-	"available_tags":{"tags_name": "name",“tags_age”: 25}
+	"number": 9832123432,
+	"available_tags":{"tags_name": "name","tags_age": 25}
    }
  
 Delete Action Endpoint
