@@ -63,7 +63,7 @@ Refresh Token Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - {{url}}/api/accounts/token/refresh/?
+   * - {{url}}/api/accounts/token/refresh/
      -   
      - POST
     
