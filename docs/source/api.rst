@@ -269,23 +269,12 @@ Begin Campaign Endpoint
    :header-rows: 1
 
    * - URL
-     - Other Values
-     - HTTP Methods
-   * - {{url}}/api/system/test/voice/
-     - message,audio,voice_input, schedule_date,aud_file,priority,status,
-     - POST
-     
-.. list-table:: 
-   :widths: 25 25 50
-   :header-rows: 1
-
-   * - URL
      - Required Values
      - Other Values
      - HTTP Methods
    * - {{url}}/api/system/campaigns/<campaign_id>/begin/
      - 
-     - message,audio,voice_input, schedule_date,aud_file,priority,status,
+     - message,audio,voice_input, schedule_date,aud_file,priority,status
      - POST
      
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to begin.
