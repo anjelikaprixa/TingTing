@@ -573,8 +573,8 @@ Sample Input:
  .. code-block:: json
 
    {
-	“number”: 9832123432,
-	"available_tags":{"tags_name": "name",“tags_age”: 25}
+	"number": 9832123432,
+	"available_tags":{"tags_name": "name","tags_age": 25}
    }
 
 
