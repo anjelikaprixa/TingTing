@@ -270,9 +270,11 @@ Begin Campaign Endpoint
 
    * - URL
      - Required Values
+     - Other Values
      - HTTP Methods
    * - {{url}}/api/system/test/voice/
-     - message
+     - 
+     - message,audio,voice_input, schedule_date,aud_file,priority,status,
      - POST
      
 .. list-table:: 
