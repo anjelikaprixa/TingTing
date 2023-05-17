@@ -31,7 +31,7 @@ After successful authentication you will get an access token. This token needs t
 
 Sample Input:
 
-.. code-block:: language
+.. code-block:: Json
 	{
 			"email": "test@gmail.com",
 
