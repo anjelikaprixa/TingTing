@@ -513,4 +513,71 @@ Sample Input:
 	"available_tags":{"tags_name": "name",“tags_age”: 25}
    }
  
+ Delete Action Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~
+`
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/number/<number_id>/delete/
+     - Number ID
+     - DEL
+   
+ Note that the <number_id> in the URL should be replaced with the ID of the number you want to delete from the campaign.
+ 
+ 
+ Number Information Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/number/<number_id>/
+     - Number ID
+     - GET
+     
+ Note that the <number_id> in the URL should be replaced with the ID of the number you want to retrieve the information of.
+ 
+ Number Edit Endpoint
+ ~~~~~~~~~~~~~~~~~~~~~
+ 
+.. list-table:: 
+   :widths: 25 25 50  
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/number/<number_id>/
+     - Number ID
+     - POST 
+   
+Note that the <number_id> in the URL should be replaced with the ID of the number you want to edit the details of.  The attributes of the number you want to change also needs to be provided.
+
+If you already have tags while creating the campaign, you can edit your tags while also editing your number. To do so you will need to provide the available tags along with the new number you want to keep.
+
+Sample Input:
+
+
+ .. code-block:: json
+
+   {
+	“number”: 9832123432,
+	"available_tags":{"tags_name": "name",“tags_age” : 25}
+   }
+
+
+ 
+
+ 
+
+
 
