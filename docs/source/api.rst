@@ -31,8 +31,10 @@ After successful authentication you will get an access token. This token needs t
 
 Sample Input:
 
+```
 {
 		"email": "test@gmail.com",
 
 		"password": "test"
 }
+```
