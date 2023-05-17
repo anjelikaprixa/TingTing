@@ -476,4 +476,41 @@ Note that the <campaign_id> in the URL should be replaced with the ID of the cam
 
 The ID will be used to then delete and edit the number from the campaign.
 
+Add Number to a Campaign Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/number/<campaign_id>
+     - Campaign ID, number
+     - POST
+  
+Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to add a number to and the number to add should be passed as an integer in the following way:
+
+Sample Input:
+
+ .. code-block:: json
+
+   {
+	"number": 9843812344
+   }
+   
+
+Note that if you want to add numerous numbers to a campaign you have to send data in the format of the sample input repeatedly. 
+To add tags to a number added in a bulk campaign, you will need to provide the tags inside the available tags attribute. Note that the tags you use should be in the “usable_tags” of the campaign.
+
+Sample Input:
+
+ .. code-block:: json
+
+   {
+	“number”: 9832123432,
+	"available_tags":{"tags_name": "name",“tags_age”: 25}
+   }
+ 
 
