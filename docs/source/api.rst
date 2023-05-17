@@ -573,3 +573,64 @@ Sample Input:
 	“number”: 9832123432,
 	"available_tags":{"tags_name": "name",“tags_age”: 25}
    }
+
+
+OTP 
+----
+
+Send OTP Endpoint
+~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 25 25
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - Other Values
+     - HTTP Methods
+   * - {{url}}/api/system/send/otp
+     - number, message, sms_send_options,
+     - otp_length,otp_options
+     - POST
+     
+By utilizing this endpoint, you can send OTPs to users by specifying the recipient's phone number as a string, along with the message containing the OTP and the desired delivery method - either through “voice” or “text” through the sms_send_option attribute. The OTP can be integrated in the message by passing it inside curly braces of the messages attribute.
+
+For Example,
+
+ .. code-block:: json
+
+   {
+	"message" : "Hi Your OTP is {otp}"
+   }
+
+In addition, you have the flexibility to choose between sending your own OTP or generating it automatically through the OTP options attribute. The available options are "personnel" and "generated". If you choose "personnel", you'll need to provide the OTP yourself. On the other hand, if you select "generated", the OTP will be auto-generated. In the “generated” scenario, you can specify the length for the auto-generated OTP. If nothing is provided, by default a generated OTP will be provided.
+
+Sample Input For Customized OTP
+
+ .. code-block:: json
+
+   {
+	"number": "9851023212",
+	"message": "Hi your OTP is {otp}",
+	"sms_send_options": "text",
+	"otp_options": "personnel",
+	"otp": "12345"
+   }
+
+Sample Input For Auto-Generated OTP
+
+
+ .. code-block:: json
+
+   {
+	"number": "9851023212",
+	"message": "Hi your OTP is {otp}",
+	"sms_send_options": "voice",
+	"otp_options": "generated",
+	"otp_length": "4"
+   }
+
+
+
+
