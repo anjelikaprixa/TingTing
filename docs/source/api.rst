@@ -213,3 +213,35 @@ Sample Input:
    }
 
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to update.
+
+Delete Campaign Endpoint
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/<campaign_id>/delete
+     - Campaign ID
+     - DEL
+     
+Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to delete.
+
+Campaign Details Endpoint
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/<campaign_id>/details
+     - Campaign ID
+     - DEL
+     
+Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to delete.
