@@ -513,7 +513,6 @@ Sample Input:
 	"available_tags":{"tags_name": "name",“tags_age”: 25}
    }
  
-
 Delete Action Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~
 
