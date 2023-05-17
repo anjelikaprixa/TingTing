@@ -418,7 +418,7 @@ Buy Number Endpoint
      - HTTP Methods
    * - {{url}}/api/system/phone_numbers
      - SID
-     - GET
+     - POST
      
 Through the POST method of this endpoint, you will be able to buy a number that is in the numbers list by providing the SID of the number you want to buy.
 
@@ -427,8 +427,161 @@ Sample Input:
  .. code-block:: json
 
    {
-	"detail":"b7142c5ae3b673d944d81c83bda4f5de"
+	"phone_sid":"b7142c5ae3b673d944d81c83bda4f5de"
    }
    
+Release Number Endpoint
+~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/phone_numbers
+     - SID
+     - DEL
+     
+Through the DEL method of this endpoint, you will be able to release a number that you currently own by providing the SID of the number you want to release.
+
+Note that the number you are about to release should not be affiliated in any campaign at the moment of release.
+
+Sample Input:
+
+ .. code-block:: json
+
+   {
+	"phone_sid":"b7142c5ae3b673d944d81c83bda4f5de"
+   }
+   
+Campaign Action
+----------------
+
+Number List Endpoint
+~~~~~~~~~~~~~~~~~~~~~
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/number/<campaign_id>
+     - Campaign ID
+     - GET
+
+Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to retrieve the numbers of. 	The details include the id of the number, the number itself, the campaign name it is affiliated to, its status, the duration, playback and credit consumed by the number. If tags are available, tags will also be retrieved from this endpoint.
+
+The ID will be used to then delete and edit the number from the campaign.
+
+
+Add Number to a Campaign Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/number/<campaign_id>
+     - Campaign ID, number
+     - POST
+  
+Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to add a number to and the number to add should be passed as an integer in the following way:
+
+Sample Input:
+
+ .. code-block:: json
+
+   {
+	"number": 9843812344
+   }
+
+Note that if you want to add numerous numbers to a campaign you have to send data in the format of the sample input repeatedly. 
+To add tags to a number added in a bulk campaign, you will need to provide the tags inside the available tags attribute. Note that the tags you use should be in the “usable_tags” of the campaign.
+
+Sample Input:
+
+ .. code-block:: json
+
+   {
+	“number”: 9832123432,
+		"available_tags":	{
+       						"tags_name": "name",
+						“tags_age”  : 25
+   					}
+   }
+ 
+
+Delete Action Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~
+`
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/number/<number_id>/delete/
+     - Number ID
+     - DEL
+   
+ Note that the <number_id> in the URL should be replaced with the ID of the number you want to delete from the campaign.
+ 
+ 
+ Number Information Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/number/<number_id>/
+     - Number ID
+     - GET
+     
+ Note that the <number_id> in the URL should be replaced with the ID of the number you want to retrieve the information of.
+ 
+ Number Edit Endpoint
+ ~~~~~~~~~~~~~~~~~~~~~
+ 
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/number/<number_id>/
+     - Number ID
+     - POST 
+   
+Note that the <number_id> in the URL should be replaced with the ID of the number you want to edit the details of.  The attributes of the number you want to change also needs to be provided.
+
+If you already have tags while creating the campaign, you can edit your tags while also editing your number. To do so you will need to provide the available tags along with the new number you want to keep.
+
+Sample Input:
+
+
+ .. code-block:: json
+
+   {
+	“number”: 9832123432,
+		"available_tags":	{
+       						"tags_name": "name",
+						“tags_age”  : 25
+   					}
+   }
+
+
+ 
 
  
