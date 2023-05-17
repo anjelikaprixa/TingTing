@@ -131,3 +131,61 @@ Here is an example of the result:
            ]
        }
    }
+
+Add Campaign Endpoint
+~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - Other Values
+     - HTTP Methods
+   * - {{url}}/api/system/campaigns/
+     - name, services, individual_number, or send_to_number_file
+     - description
+     - POST
+
+To add a campaign, you'll need to access the campaign endpoint using the HTTP POST method. The required inputs for creating a campaign include the name of the campaign, the services offered by the campaign, and the recipient phone numbers.
+
+To add individual recipients, you'll need to provide their phone number as an individual input in a list. If you want to add multiple recipients, you can send a file containing the phone numbers in .csv or .xlsx format.
+
+Sample Input:
+
+.. code-block:: json
+	{
+		"name":"sample individual campaign",
+
+		"services": "PHONE",
+
+		"individual_number": [9876543210, 98675432123]
+
+	}
+
+	{
+		"name":"sample bulk campaign",
+
+		"services": "SMS",
+
+		"send_to_number_file" :"numbers.csv"	
+	
+	}
+	
+The description field for the campaign is to keep the general explanation of the campaign and it is optional.
+
+Sample input with description:
+
+.. code-block:: json
+	{
+		"name":"sample individual campaign",
+
+		"services": "PHONE",
+
+		"individual_number": [9876543210, 98675432123],
+
+		"description": "This campaign is to notify users that and IPO has been opened"
+	}
+  
+   
