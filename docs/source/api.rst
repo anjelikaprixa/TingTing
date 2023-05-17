@@ -18,7 +18,7 @@ Authentication
 Login Endpoint
 ~~~~~~~~~~~~~~
 
-.. list-table:: Title
+.. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
 
@@ -41,7 +41,7 @@ Sample Input:
 
 User Detail Endpoint
 ~~~~~~~~~~~~~~~~~~~~
-.. list-table:: Title
+.. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
 
@@ -56,7 +56,7 @@ You can get all details of the user that is currently logged in via a GET reques
 
 Refresh Token Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
-.. list-table:: Title
+.. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
 
@@ -75,7 +75,7 @@ Campaign
 Get Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table:: Title
+.. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
 
@@ -135,7 +135,7 @@ Here is an example of the result:
 Add Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table:: Title
+.. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
 
@@ -185,7 +185,7 @@ Sample input with description:
 Update Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table:: Title
+.. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
 
@@ -217,7 +217,7 @@ Note that the <campaign_id> in the URL should be replaced with the ID of the cam
 Delete Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table:: Title
+.. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
 
@@ -233,7 +233,7 @@ Note that the <campaign_id> in the URL should be replaced with the ID of the cam
 Campaign Details Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table:: Title
+.. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
 
@@ -245,3 +245,19 @@ Campaign Details Endpoint
      - DEL
      
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to delete.
+
+Test Voice Endpoint
+~~~~~~~~~~~~~~~~~~~~~~
+To test a voice, a sample message needs to be provided.
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - {{url}}/api/system/test/voice/
+     - message
+     - POST
+     
+
