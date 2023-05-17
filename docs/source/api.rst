@@ -33,8 +33,8 @@ Sample Input:
 
 .. code-block:: Json
 	{
-			"email": "test@gmail.com",
+		"email": "test@gmail.com",
 
-			"password": "test"
+		"password": "test"
 	}
 
