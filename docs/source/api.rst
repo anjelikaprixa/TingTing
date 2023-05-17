@@ -431,18 +431,3 @@ Sample Input:
 	"detail":"b7142c5ae3b673d944d81c83bda4f5de"
    }
    
-
-Release Number Endpoint
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table:: 
-   :widths: 25 25 50
-   :header-rows: 1
-
-   * - URL
-     - Required Values
-     - HTTP Methods
-   * - {{url}}/api/system/phone_numbers
-     - SID
-     - DEL
-
