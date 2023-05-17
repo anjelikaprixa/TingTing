@@ -446,17 +446,3 @@ Release Number Endpoint
      - SID
      - DEL
 
-
-
-Through the DEL method of this endpoint, you will be able to release a number that you currently own by providing the SID of the number you want to release.
-
-Note that the number you are about to release should not be affiliated in any campaign at the moment of release.
-Sample Input:
-
- .. code-block:: json
-
-   {
-	"detail":"b7142c5ae3b673d944d81c83bda4f5de"
-   }
-   
-   
