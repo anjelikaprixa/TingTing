@@ -153,6 +153,7 @@ To add a campaign, you'll need to access the campaign endpoint using the HTTP PO
 To add individual recipients, you'll need to provide their phone number as an individual input in a list. If you want to add multiple recipients, you can send a file containing the phone numbers in .csv or .xlsx format.
 
 Sample Input:
+
 .. code-block:: json
 
    {
