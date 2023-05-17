@@ -269,11 +269,9 @@ Begin Campaign Endpoint
    :header-rows: 1
 
    * - URL
-     - Required Values
      - Other Values
      - HTTP Methods
    * - {{url}}/api/system/test/voice/
-     - 
      - message,audio,voice_input, schedule_date,aud_file,priority,status,
      - POST
      
