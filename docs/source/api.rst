@@ -90,79 +90,44 @@ Information of all campaigns of logged in users are retrieved at this endpoint. 
 
 Here is an example of the result:
 
-::
-	{ 
-		"pagination": {
+.. code-block:: json
 
-				"total_items": 3,
-
-				"total_pages": 1,
-
-				"page_number": 1,
-
-				"has_next": false,
-
-				"has_previous": false,
-
-				"links": []
-							},
-		"result": {
-
-			"messages": "Campaign Successfully Retrieved",
-		
-			"campaign-lists": [
-
-						{
-									
-							"id": 8,
-
-							"name": "sample individual campaign",
-
-							"user_phone": [],
-
-							"services": "PHONE",
-
-							"description": "This campaign is to notify users that and IPO has been opened",
-									
-							"usable_tags": []
-
-						},
-
-						{
-
-							"id": 5,
-
-							"name": "test1",
-
-							"user_phone": [],
-
-							"services": "SMS",
-
-							"description": "test campaign ",
-
-							"usable_tags": ["tags_name","tags_age"]
-
-						},
-
-						{
-
-							"id": 3,
-
-							"name": "Sample",
-
-							"user_phone": [],
-
-							"services": "PHONE",
-
-							"description": "Description",
-
-							"usable_tags": []
-
-						}
-
-				]
-
-		}
-
-	}
-
+   {
+       "pagination": {
+           "total_items": 3,
+           "total_pages": 1,
+           "page_number": 1,
+           "has_next": false,
+           "has_previous": false,
+           "links": []
+       },
+       "result": {
+           "messages": "Campaign Successfully Retrieved",
+           "campaign-lists": [
+               {
+                   "id": 8,
+                   "name": "sample individual campaign",
+                   "user_phone": [],
+                   "services": "PHONE",
+                   "description": "This campaign is to notify users that an IPO has been opened",
+                   "usable_tags": []
+               },
+               {
+                   "id": 5,
+                   "name": "test1",
+                   "user_phone": [],
+                   "services": "SMS",
+                   "description": "test campaign",
+                   "usable_tags": ["tags_name", "tags_age"]
+               },
+               {
+                   "id": 3,
+                   "name": "Sample",
+                   "user_phone": [],
+                   "services": "PHONE",
+                   "description": "Description",
+                   "usable_tags": []
+               }
+           ]
+       }
+   }
