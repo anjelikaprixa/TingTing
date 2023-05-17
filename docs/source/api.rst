@@ -4,7 +4,7 @@ API
 .. autosummary::
    :toctree: generated
 
-   lumache
+   TingTing
 
 
 Introduction
