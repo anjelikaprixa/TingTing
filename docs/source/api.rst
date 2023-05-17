@@ -516,7 +516,7 @@ Sample Input:
 
 Delete Action Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~
-	   
+
 .. list-table:: 
    :widths: 25 25 50
    :header-rows: 1
@@ -527,7 +527,7 @@ Delete Action Endpoint
    * - {{url}}/api/system/campaigns/number/<number_id>/delete/
      - Number ID
      - DEL
-   
+
  Note that the <number_id> in the URL should be replaced with the ID of the number you want to delete from the campaign.
  
  
