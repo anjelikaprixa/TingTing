@@ -336,7 +336,7 @@ Test Voice Endpoint
 To test a voice, a sample message needs to be provided.
 
 .. list-table:: 
-   :widths: 25 25 50
+   :widths: 25 25 25 25 
    :header-rows: 1
 
    * - URL
