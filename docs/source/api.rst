@@ -737,7 +737,7 @@ Sample Output:
     		"message": "Campaign is running",
     		"errors": [],
     		"data": {
-			"hold amount": "3 credit on hold for Adwait Upadhyaya campaign." 
+			"hold amount": "3 credit on hold for sample campaign name campaign." 
         		}
     	}
 
