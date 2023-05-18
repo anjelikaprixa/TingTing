@@ -251,7 +251,7 @@ Sample Input:
 	"phone_sid":"b7142c5ae3b673d944d81c83bda4f5de"
    }
    
- All the details of the phone you bought is also shown when you buy the number. The SID might be used in the future to release the number or buy it again after release. 
+All the details of the phone you bought is also shown when you buy the number. The SID might be used in the future to release the number or buy it again after release. 
  
 Sample Output:
 
