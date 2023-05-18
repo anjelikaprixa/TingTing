@@ -48,7 +48,7 @@ User Detail Endpoint
      -   
      - GET
 
-You can get all details of the user that is currently logged in via a GET request.
+You can get all your details via a GET request.
 
 Refresh Token Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -83,7 +83,7 @@ Owned Numbers Endpoint
      - 
      - GET
   
-By accessing this endpoint, you can retrieve details for all phone numbers associated with the currently logged-in user. These details include the phone number itself, its capabilities for voice, SMS, MMS, and fax, the rate of the number, the SID, friendly name, and other relevant information.
+By accessing this endpoint, you can retrieve details for all your phone numbers. These details include the phone number itself, its capabilities for voice, SMS, MMS, and fax, the rate of the number, the SID, friendly name, and other relevant information.
 
 Numbers List Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -167,7 +167,7 @@ Get Campaign Endpoint
      -   
      - GET
 
-Information of all campaigns of logged in users are retrieved at this endpoint. The information includes the campaign id, name, user phones, services, descriptions and usable tags. The id is to be used in the future to update, delete or begin the campaign. Tags can be used to send personalized messages to users while  starting the campaign.
+Information of all of your campaigns are retrieved at this endpoint. The information includes the campaign id, name, user phones, services, descriptions and usable tags. The id is to be used in the future to update, delete or begin the campaign. Tags can be used to send personalized messages to users while  starting the campaign.
 
 Here is an example of the result:
 
@@ -346,7 +346,7 @@ To test a voice, a sample message needs to be provided.
      - message
      - POST
      
-To test a voice, a sample message needs to be provided.
+To test a voice, a sample :literal:`message` needs to be provided.
 
 
      
@@ -480,7 +480,7 @@ Number List Endpoint
      - Campaign ID
      - GET
 
-Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to retrieve the numbers of. 	The details include the id of the number, the number itself, the campaign name it is affiliated to, its status, the duration, playback and credit consumed by the number. If tags are available, tags will also be retrieved from this endpoint.
+Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to retrieve the numbers of. The details include the id of the number, the number itself, the campaign name it is affiliated to, its status, the duration, playback and credit consumed by the number. If tags are available, tags will also be retrieved from this endpoint.
 
 The ID will be used to then delete and edit the number from the campaign.
 
