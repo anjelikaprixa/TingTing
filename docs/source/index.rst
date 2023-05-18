@@ -14,5 +14,5 @@ Contents
 --------
 
 .. toctree::
-
+ :numbered:
    api
