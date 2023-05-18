@@ -245,7 +245,7 @@ Through the POST method of this endpoint, you will be able to buy a number that 
 
 Sample Input:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"phone_sid":"b7142c5ae3b673d944d81c83bda4f5de"
@@ -667,7 +667,7 @@ If you want to schedule a campaign you need to pass a schedule date and time  i
 Sample Input for personal message:
 
  
- .. code-block:: json
+.. code-block:: json
 
    {
        "message": "sample text message"
@@ -675,7 +675,7 @@ Sample Input for personal message:
    
 Sample input for personal audio:
 
- .. code-block:: json
+.. code-block:: json
 
    {
        "aud_file": "path/containing/audio.mp3"
@@ -685,7 +685,7 @@ You also have the option to change the voice input for the campaign you want to 
 
 Sample Input:
 
- .. code-block:: json
+.. code-block:: json
 
    {
        "message": "Message to Convey",
@@ -701,7 +701,7 @@ Valid options are :literal:`hungup`, :literal:`unanswered`, :literal:`failed`, :
 
 Sample input to re-run a campaign based on the status:
 
- .. code-block:: json
+.. code-block:: json
 
    {
        "message": "Here you send your message you want to convey",
@@ -824,7 +824,7 @@ Note that the <campaign_id> in the URL should be replaced with the ID of the cam
 
 Sample Input:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"number": 9843812344
@@ -836,7 +836,7 @@ To add tags to a number added in a bulk campaign, you will need to provide the t
 
 Sample Input:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"number": 9832123432,
@@ -862,7 +862,7 @@ Note that the <number_id> in the URL should be replaced with the ID of the numbe
  
 Sample output:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"status": 200,
@@ -894,7 +894,7 @@ The details of the number will be retrieved with the following details:
 
 Sample output:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"status": 200,
@@ -937,7 +937,7 @@ If you already have tags while creating the campaign, you can edit your tags whi
 
 Sample Input:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"number": 9832123432,
@@ -948,7 +948,7 @@ The details after the updating is successfully completed is shown
 
 Sample Output:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"status": 200,
@@ -992,7 +992,7 @@ By utilizing this endpoint, you can send OTPs to users by specifying the recipie
 
 For Example,
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"message" : "Hi Your OTP is {otp}"
@@ -1002,7 +1002,7 @@ In addition, you have the flexibility to choose between sending your own OTP or 
 
 Sample Input For Customized OTP
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"number": "9851023212",
@@ -1015,7 +1015,7 @@ Sample Input For Customized OTP
 Sample Input For Auto-Generated OTP
 
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"number": "9851023212",
@@ -1026,11 +1026,11 @@ Sample Input For Auto-Generated OTP
    }
 
 
-The details of the sent OTP is shown
+The details of the sent OTP is shown. 
 
 Sample Output:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"status": 200,
