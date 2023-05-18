@@ -271,7 +271,7 @@ Update Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table:: 
-   :widths: 25 25 50
+   :widths: 25 25 25 25
    :header-rows: 1
 
    * - URL
