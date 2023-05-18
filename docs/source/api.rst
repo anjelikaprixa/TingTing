@@ -60,10 +60,21 @@ Refresh Token Endpoint
      - Required Values
      - HTTP Methods
    * - https://tingting.io/api/accounts/token/refresh/
-     -   
+     - refresh
      - POST
     
 The access token provided during authentication expires after some time and a new one is required. The refresh token is used to generate a new access token.
+
+You need to provide the current refresh token obtained as the result of the login endpoint as an attribute through :literal:`refresh`.
+
+Sample Input:
+
+.. code-block:: json
+
+   {
+			"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4NDQ4NDA4NSwiaWF0IjoxNjg0Mzk3Njg1LCJqdGkiOiJiYjg0MjU0MDllYTE0ODZiYmYyMTgyYjkyNTZjMmY3MiIsInVzZXJfaWQiOjF9.4KPNR53AEp8dmq0ch1uVkFXlDaSWBt12_JlYn-XtAcI"
+   }
+
 
 
 Phone Numbers
@@ -144,7 +155,7 @@ Through the DEL method of this endpoint, you will be able to release a number th
 
 Sample Input:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"phone_sid":"b7142c5ae3b673d944d81c83bda4f5de"
