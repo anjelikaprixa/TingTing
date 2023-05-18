@@ -605,8 +605,6 @@ To test a voice, a sample :literal:`message` needs to be provided.
 You can also specify the voice to test your message. The options are: :literal:`np_rija`, :literal:`np_prasanna` and :literal:`np_binod`.
 If nothing is provided, np_rija is used. 
 
-
-     
 Begin Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -622,7 +620,7 @@ Begin Campaign Endpoint
      - message
      - audio,voice_input, schedule_date,aud_file,priority,status
      - POST
-     
+  
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to begin.
 
 Note: that if you have a text message as well as an audio in your campaign, you need to define which one your campaign should start with using the priority attribute.
@@ -807,48 +805,6 @@ Sample Output:
 			}
     	}
 
-.. code-block:: json
-	{
-		"status": 200,
-		"success": true,
-		"message": null,
-		"errors": [],
-		"data": {
-			"messages": "Number related to Adwait Upadhyaya campaign Retrived successfully",
-			"number-lists": [
-				{
-				"id": 34,
-				"number": 9843818700,
-				"campaing": "Adwait Upadhyaya",
-				"available_tags": {},
-				"status": "not started",
-				"duration": null,
-				"playback": null,
-				"credit_consumed": 8
-				},
-				{
-				"id": 33,
-				"number": 984381123,
-				"campaing": "Adwait Upadhyaya",
-				"available_tags": {},
-				"status": "not started",
-				"duration": null,
-				"playback": null,
-				"credit_consumed": 2
-				},
-				{
-				"id": 32,
-				"number": 9843818701,
-				"campaing": "Adwait Upadhyaya",
-				"available_tags": {},
-				"status": "not started",
-				"duration": null,
-				"playback": null,
-				"credit_consumed": 5
-				}
-		]
-		}
-	}
 
 Add Number to a Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -887,6 +843,7 @@ Sample Input:
 	"available_tags":{"tags_name": "name","tags_age": 25}
    }
  
+
 Delete Action Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -903,7 +860,20 @@ Delete Action Endpoint
 
 Note that the <number_id> in the URL should be replaced with the ID of the number you want to delete from the campaign.
  
- 
+Sample output:
+
+ .. code-block:: json
+
+   {
+	"status": 200,
+	    "success": true,
+	    "message": null,
+	    "errors": [],
+	    "data": {
+		"campaign-details": "9851022343 of campaign campaign bulk deleted Successfully!!"
+    		}
+   }
+
 Number Information Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
