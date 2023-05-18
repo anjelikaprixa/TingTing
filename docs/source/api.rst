@@ -74,6 +74,29 @@ User Detail Endpoint
 
 You can get all your details via a GET request.
 
+Sample Output:
+
+.. code-block:: json
+	
+	{
+		"status": 200,
+    		"success": true,
+    		"message": null,
+    		"errors": [],
+    		"data": {
+        		"user_details": {
+            			"first_name": "Adwait",
+				"last_name": "Upadhyaya",
+				"email": "adwait627@gmail.com",
+				"username": "adw8",
+			    	"is_verified_email": true,
+			    	"contact_number": "9843818700",
+				"is_verified_phone": true,
+			    	"address": "Rose village, balkot, 41"
+        		}
+    	}
+	
+
 Refresh Token Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
 .. list-table:: 
