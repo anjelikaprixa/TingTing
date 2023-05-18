@@ -944,6 +944,30 @@ Sample Input:
 	"available_tags":{"tags_name": "name","tags_age": 25}
    }
 
+The details after the updating is successfully completed is shown
+
+Sample Output:
+
+ .. code-block:: json
+
+   {
+	"status": 200,
+	    "success": true,
+	    "message": "Action details successfully updated.",
+	    "errors": [],
+	    "data": {
+		"details" : {
+			"id": 34,
+			"number": 9843818700,
+			"campaing": "sample campaign",
+		    	"available_tags": {},
+		    	"status": "not started",
+		    	"duration": null,
+		    	"playback": null,
+		    	"credit_consumed": 8
+		}
+    		}
+   }
 
 OTP 
 ----
@@ -1001,6 +1025,28 @@ Sample Input For Auto-Generated OTP
 	"otp_length": "4"
    }
 
+
+The details of the sent OTP is shown
+
+Sample Output:
+
+ .. code-block:: json
+
+   {
+	"status": 200,
+	    "success": true,
+	    "message": "OTP Sent Successfully.",
+	    "errors": [],
+	    "data": {
+		"details" : {
+			"number": "9843818700",
+		    	"otp_options": "personnel",
+		    	"message": "Hi your OTP is 1 2 3 4 5",
+		    	"otp": "12345",
+		    	"sms_send_options": "text"
+		}
+    		}
+   }
 
 
 
