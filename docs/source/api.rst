@@ -75,6 +75,16 @@ Sample Input:
 		"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4NDQ4NDA4NSwiaWF0IjoxNjg0Mzk3Njg1LCJqdGkiOiJiYjg0MjU0MDllYTE0ODZiYmYyMTgyYjkyNTZjMmY3MiIsInVzZXJfaWQiOjF9.4KPNR53AEp8dmq0ch1uVkFXlDaSWBt12_JlYn-XtAcI"
 	}
 
+A new access token is the output of this endpoint. You will need to provide this newly retrieved access token top the bearer token. 
+
+Sample output:
+
+.. code-block:: json
+
+	{	
+		"access":"eyJhbGciOiJIUzI1NiIsInR5cCwevcS345F6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4NDQ4NDA4NSwiaWF0IjoxNjg0Mzk3Njg1LCJqdGkiOiJiYjg0MjU0MDllYTE0ODZiYmYyMTgyYjkyNTZjMmY3MiIsInVzZXJfaWQiOjF9.4KPNR53AEp8dmq0ch1uVkFXlDaSWBt12_JlYn-XtAcI"
+	}
+
 
 
 Phone Numbers
