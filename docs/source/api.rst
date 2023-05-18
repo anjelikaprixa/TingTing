@@ -163,18 +163,7 @@ Get Campaign Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/phone_numbers
-     - SID
-     - DEL
-
-.. list-table:: 
-   :widths: 25 25 50
-   :header-rows: 1
-
-   * - URL
-     - Required Values
-     - HTTP Methods
-   * -https://tingting.io/api/system/campaigns
+   * - https://tingting.io/api/system/campaigns
      -   
      - GET
 
