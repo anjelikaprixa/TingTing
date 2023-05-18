@@ -381,7 +381,7 @@ Sample Input:
        "priority": "message"
    }
    
-You can also add your own message or audio. If you want to change the existing message or aud_file, you can do so by providing your own.
+You can also add your own message or audio. If you want to change the existing  :literal:`message` or  :literal:`aud_file`, you can do so by providing your own.
 
 .. code-block:: json
 
