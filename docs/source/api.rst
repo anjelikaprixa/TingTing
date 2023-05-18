@@ -180,6 +180,7 @@ Sample Output:
 				"http_request": null
         		}
 			]
+			}
     	}
 	
 	
@@ -199,6 +200,34 @@ Numbers List Endpoint
   
 By accessing this endpoint, you can retrieve details for all phone numbers not associated with any users and are available to buy. These details include the phone number itself, its capabilities for voice, SMS, MMS, and fax, the rate of the number, the SID, friendly name, and other relevant information.
 
+Sample Output:
+
+.. code-block:: json
+	
+	{
+		"status": 200,
+    		"success": true,
+    		"message": "Number Lists Retrived Successfully!!",
+    		"errors": [],
+    		"data": {
+        		"number_lists": [
+				{
+            			"phone_number": "9876565435",
+				"rate": 40.0,
+				"available_capabilities": "Voice, SMS",
+				"phone_number_sid": "b7142c5ae3b673d944d81c83bda4f5de",
+				"friendly_name": "",
+				"accept_incoming": null,
+				"configure_with": "",
+				"call_comes_in": null,
+				"call_url": null,
+				"http_request": null
+        		}
+			]
+			}
+    	}
+	
+	
 Buy Number Endpoint
 ~~~~~~~~~~~~~~~~~~~~
 
