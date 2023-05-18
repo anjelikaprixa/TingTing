@@ -370,7 +370,7 @@ Note that the <campaign_id> in the URL should be replaced with the ID of the cam
 
 Note: that if you have a text message as well as an audio in your campaign, you need to define which one your campaign should start with using the priority attribute.
 
-The options are “message” and “audio”.
+The options are :literal:`message` and :literal:`audio`.
 
 Sample Input:
 
