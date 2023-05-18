@@ -399,6 +399,9 @@ Sample Tags:
 
 Message: “Hi  :literal:`{tags_name}`, you are :literal:`{tags_age}` years old and your salary is :literal:`{tags_salary}`.”
 
+Schedule Campaign
+~~~~~~~~~~~~~~~~~~
+
 If you want to schedule a campaign you need to pass a schedule date and time  in the following format:
 
 .. code-block:: json
