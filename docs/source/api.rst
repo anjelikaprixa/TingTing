@@ -890,7 +890,33 @@ Number Information Endpoint
      
 Note that the <number_id> in the URL should be replaced with the ID of the number you want to retrieve the information of.
 
+The details of the number will be retrieved with the following details:
 
+Sample output:
+
+ .. code-block:: json
+
+   {
+	"status": 200,
+	    "success": true,
+	    "message": null,
+	    "errors": [],
+	    "data": {
+	    	"messages" : "9843818700 details retrieved successfully!!"
+		"number-detail" : {
+			"id": 34,
+			"number": 9843818700,
+			"campaing": "Adwait Upadhyaya",
+		    	"available_tags": {},
+		    	"status": "not started",
+		    	"duration": null,
+		    	"playback": null,
+		    	"credit_consumed": 8
+		}
+    		}
+   }
+   
+   
 Number Edit Endpoint
 ~~~~~~~~~~~~~~~~~~~~~
 
