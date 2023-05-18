@@ -708,7 +708,7 @@ Sample input to re-run a campaign based on the status:
 
    {
        "message": "Here you send your message you want to convey",
-	"status": "failed, hungup"
+	"status": ["failed, hungup"]
    }
 
 This will start the campaign for all numbers whose status is failed and hungup.
@@ -716,7 +716,7 @@ This will start the campaign for all numbers whose status is failed and hungup.
 
 Sample input encompassing all attributes:
 
- .. code-block:: json
+.. code-block:: json
 
    {
 	"message": "Hi {tags_name}, you are {tags_age} years old and your salary is {tags_salary}.",
@@ -727,7 +727,21 @@ Sample input encompassing all attributes:
 	"status": "failed"
    }
 
-   
+Sample Output:
+
+.. code-block:: json
+	
+	{
+		"status": 200,
+    		"success": true,
+    		"message": "Campaign is running",
+    		"errors": [],
+    		"data": {
+			"hold amount": "3 credit on hold for Adwait Upadhyaya campaign." 
+        		}
+    	}
+
+
 Campaign Action
 ----------------
 
