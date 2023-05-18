@@ -233,7 +233,7 @@ To add a campaign, you'll need to access the campaign endpoint using the HTTP PO
 
 To add individual recipients, you'll need to provide their phone number as an individual input in a list. If you want to add multiple recipients, you can send a file containing the phone numbers in .xlsx format.
 
-Sample Input:
+Sample Input for Individual campaign:
 
 .. code-block:: json
 
@@ -243,10 +243,14 @@ Sample Input:
        "individual_number": [9876543210, 98675432123]
    }
 
+Sample Input for Bulk campaign
+
+.. code-block:: json
+
    {
        "name": "sample bulk campaign",
        "services": "SMS",
-       "send_to_number_file": "numbers.csv"
+       "send_to_number_file": "numbers.xlsx"
    }
 
 The description field for the campaign is to keep the general explanation of the campaign and it is optional.
