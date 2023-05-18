@@ -444,10 +444,10 @@ Sample input to re-run a campaign based on the status:
 
    {
        "message": "Here you send your message you want to convey",
-	"status": "Failed"
+	"status": "failed, hungup"
    }
 
-This will start the campaign for all numbers whose status is failed.
+This will start the campaign for all numbers whose status is failed and hungup.
 
 
 Sample input encompassing all attributes:
