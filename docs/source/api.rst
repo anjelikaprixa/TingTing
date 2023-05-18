@@ -252,6 +252,36 @@ Sample Input:
 	"phone_sid":"b7142c5ae3b673d944d81c83bda4f5de"
    }
    
+ All the details of the phone you bought is also shown when you buy the number. The SID might be used in the future to release the number or buy it again after release. 
+ 
+Sample Output:
+
+.. code-block:: json
+	
+	{
+		"status": 200,
+    		"success": true,
+    		"message": "9876565435 number bought successfully!!",
+    		"errors": [],
+    		"data": {
+        		"number_details": [
+				{
+            			"phone_number": "9876565435",
+				"rate": 40.0,
+				"available_capabilities": "Voice, SMS",
+				"phone_number_sid": "b7142c5ae3b673d944d81c83bda4f5de",
+				"friendly_name": "",
+				"accept_incoming": null,
+				"configure_with": "",
+				"call_comes_in": null,
+				"call_url": null,
+				"http_request": null
+        		}
+			]
+			}
+    	}
+
+
 Release Number Endpoint
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -277,6 +307,18 @@ Sample Input:
 	"phone_sid":"b7142c5ae3b673d944d81c83bda4f5de"
    }
 
+Sample Output:
+
+.. code-block:: json
+
+   {
+	"status": 204,
+    	"success": true,
+ 	"message": "9876565435 number released successfully!!",
+ 	"errors": [],
+    	"data": {}
+   }
+   
 Campaign
 --------
 
@@ -297,6 +339,7 @@ Get Campaign Endpoint
 Information of all of your campaigns are retrieved at this endpoint. The information includes the campaign id, name, user phones, services, descriptions and usable tags. The id is to be used in the future to update, delete or begin the campaign. Tags can be used to send personalized messages to users while  starting the campaign.
 
 Here is an example of the result:
+The campaign ID is used to edit, delete, run and perform other campaign activities. 
 
 .. code-block:: json
 
@@ -393,6 +436,27 @@ Sample input with description:
        "description": "This campaign is to notify users that an IPO has been opened"
    }
 
+Sample Output:
+
+.. code-block:: json
+	
+	{
+		"status": 201,
+    		"success": true,
+    		"message": "Campaign Created Successfully",
+    		"errors": [],
+    		"data": {
+        		"details": [
+				{
+            			"id": 15,
+            			"name": "new campaign name",
+            			"user_phone": [],
+            			"services": "SMS",
+            			"description": "This campaign is to notify users that and IPO has been opened"
+        		}
+			]
+			}
+    	}
 
 Update Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -426,6 +490,29 @@ Sample Input:
 
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to update.
 
+Sample Output:
+
+.. code-block:: json
+	
+	{
+		"status": 200,
+    		"success": true,
+    		"message": "Campaign details successfully updated.",
+    		"errors": [],
+    		"data": {
+        		"details": [
+				{
+            			"id": 15,
+            			"name": "new campaign name",
+            			"user_phone": [],
+            			"services": "SMS",
+            			"description": "This campaign is to notify users that and IPO has been opened"
+        		}
+			]
+			}
+    	}
+
+
 Delete Campaign Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -442,6 +529,21 @@ Delete Campaign Endpoint
      
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to delete.
 
+Sample Output:
+
+.. code-block:: json
+	
+	{
+		"status": 200,
+    		"success": true,
+    		"message": null,
+    		"errors": [],
+    		"data": {
+        		"camaign": "Campaign Deleted Succesfully" 
+        		}
+    	}
+
+
 Campaign Details Endpoint
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -457,6 +559,31 @@ Campaign Details Endpoint
      - DEL
      
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to delete.
+
+Sample Output:
+
+.. code-block:: json
+	
+	{
+		"status": 200,
+    		"success": true,
+    		"message": null,
+    		"errors": [],
+    		"data": {
+			"messages" : "Details Retrived successfully",
+        		"details": [
+				{
+            			"id": 14,
+           			"name": "campaign name",
+            			"user_phone": [],
+            			"services": "SMS",
+				"description": "asd",
+            			"usable_tags": []
+        		}
+			]
+			}
+    	}
+
 
 Test Voice Endpoint
 ~~~~~~~~~~~~~~~~~~~~
