@@ -35,6 +35,29 @@ Sample Input:
 		"password": "test"
 	}
 
+The access token generated from the login endpoint must be provided to the bearer token. The refresh token, on the other hand needs to be used while refreshing the access token which will expire in 1 day. 
+
+Sample Output:
+
+::
+	{
+		"status": 200,
+    		"success": true,
+    		"message": "Successfully logged in",
+    		"errors": [],
+    		"data": {
+        		"token": {
+            			"refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4NDQ4ODc1NSwiaWF0IjoxNjg0NDAyMzU1LCJqdGkiOiI5NTE4NmU1ZmE3ZDk0ODk2YWYwOGRmMjAzMzJiNGQzNSIsInVzZXJfaWQiOjF9.l2_gCITK5yeTgCHNbg69wFoLs2mTd0rcFR7xznGBuBQ",
+            			"access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg0ODM0MzU1LCJpYXQiOjE2ODQ0MDIzNTUsImp0aSI6IjJkNWU5MmE0ZGUyYzRmY2Q5ZTY1ZmUwM2NjODE1ZDI1IiwidXNlcl9pZCI6MX0.krNFgz7-ds-TrPwzepA9sUtbsnOGkEhtiL2foPs4bDE"
+        		},
+        		"user_data": {
+            			"first_name": "Adwait",
+            			"last_name": "Upadhyaya",
+            			"email": "adwait627@gmail.com"
+        		}
+    	}
+		
+
 User Detail Endpoint
 ~~~~~~~~~~~~~~~~~~~~
 .. list-table:: 
