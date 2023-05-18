@@ -40,6 +40,7 @@ The access token generated from the login endpoint must be provided to the beare
 Sample Output:
 
 .. code-block:: json
+	
 	{
 		"status": 200,
     		"success": true,
