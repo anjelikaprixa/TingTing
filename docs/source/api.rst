@@ -393,7 +393,7 @@ Furthermore, you can also add available tags to your message using variables and
 
 Sample Tags:
 
-Message: “Hi {tags_name}, you are {tags_age} years old and your salary is {tags_salary}.”
+Message: “Hi  :literal:`{tags_name}`, you are :literal:`{tags_age}` years old and your salary is :literal:`{tags_salary}`.”
 
 If you want to schedule a campaign you need to pass a schedule date and time  in the following format:
 
@@ -420,7 +420,7 @@ Sample input for personal audio:
        "aud_file": "path/containing/audio.mp3"
    }
    
-You also have the option to change the voice input for the campaign you want to begin. The options are “np_rija”, “np_prasanna” and “np_binod”
+You also have the option to change the voice input for the campaign you want to begin. The options are :literal:`np_rija`, :literal:`np_prasanna` and :literal:`np_binod`
 
 Sample Input:
 
@@ -436,7 +436,7 @@ Re-run a Campaign
 
 To re-run a campaign you need to provide the campaign id in the same URL with “status” in the data. Specific actions inside the campaign specified by the status can also be re-started by entering the following input format.
 
-Valid options are 'hungup', 'unanswered', 'failed', 'terminated' and 'completed'
+Valid options are :literal:`hungup`, :literal:`unanswered`, :literal:`failed`, :literal:`terminated` and :literal:`completed`
 
 Sample input to re-run a campaign based on the status:
 
@@ -602,7 +602,7 @@ Send OTP Endpoint
      - otp_length, otp_options
      - POST
      
-By utilizing this endpoint, you can send OTPs to users by specifying the recipient's phone number as a string, along with the message containing the OTP and the desired delivery method - either through “voice” or “text” through the sms_send_option attribute. The OTP can be integrated in the message by passing it inside curly braces of the messages attribute.
+By utilizing this endpoint, you can send OTPs to users by specifying the recipient's phone number as a string, along with the message containing the OTP and the desired delivery method - either through :literal:`voice` or :literal:`text` through the sms_send_option attribute. The OTP can be integrated in the message by passing it inside curly braces of the messages attribute.
 
 For Example,
 
@@ -612,7 +612,7 @@ For Example,
 	"message" : "Hi Your OTP is {otp}"
    }
 
-In addition, you have the flexibility to choose between sending your own OTP or generating it automatically through the OTP options attribute. The available options are "personnel" and "generated". If you choose "personnel", you'll need to provide the OTP yourself. On the other hand, if you select "generated", the OTP will be auto-generated. In the “generated” scenario, you can specify the length for the auto-generated OTP. If nothing is provided, by default a generated OTP will be provided.
+In addition, you have the flexibility to choose between sending your own OTP or generating it automatically through the OTP options attribute. The available options are :literal:`personnel` and :literal:`generated`. If you choose :literal:`personnel`, you'll need to provide the OTP yourself. On the other hand, if you select :literal:`generated`, the OTP will be auto-generated. In the :literal:`generated` scenario, you can specify the length  via the :literal:`otp_length` for the auto-generated OTP. If nothing is provided, by default a generated OTP will be provided.
 
 Sample Input For Customized OTP
 
