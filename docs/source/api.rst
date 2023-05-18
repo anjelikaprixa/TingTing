@@ -431,6 +431,9 @@ Sample Input:
 	"voice_input": "np_prasanna"
    }
    
+Re-run a Campaign
+~~~~~~~~~~~~~~~~~~
+
 To re-run a campaign you need to provide the campaign id in the same URL with “status” in the data. Specific actions inside the campaign specified by the status can also be re-started by entering the following input format.
 
 Valid options are 'hungup', 'unanswered', 'failed', 'terminated' and 'completed'
