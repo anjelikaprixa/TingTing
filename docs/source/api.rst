@@ -7,7 +7,6 @@ API
    TingTing
 
 
-
 Authentication
 ---------------
 
@@ -764,6 +763,49 @@ The ID will be used to then delete and edit the number from the campaign.
 
 Sample Output:
 
+.. code-block:: json
+	
+	{
+		"status": 200,
+    		"success": true,
+    		"message": null,
+    		"errors": [],
+    		"data": {
+			"messages" : "Number related to Sample campaign name campaign Retrived successfully"
+        		"number-lists": [
+				{
+				"id": 34,
+				"number": 9843818700,
+				"campaing": "Sample campaign name",
+				"available_tags": {},
+				"status": "not started",
+				"duration": null,
+				"playback": null,
+				"credit_consumed": 8
+				},
+				{
+				"id": 33,
+				"number": 984381123,
+				"campaing": "Sample campaign name",
+				"available_tags": {},
+				"status": "not started",
+				"duration": null,
+				"playback": null,
+				"credit_consumed": 2
+				},
+				{
+				"id": 32,
+				"number": 9843818701,
+				"campaing": "Sample campaign name",
+				"available_tags": {},
+				"status": "not started",
+				"duration": null,
+				"playback": null,
+				"credit_consumed": 5
+				}
+			]
+			}
+    	}
 
 .. code-block:: json
 	{
