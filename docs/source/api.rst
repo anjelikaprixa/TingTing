@@ -332,7 +332,7 @@ Campaign Details Endpoint
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to delete.
 
 Test Voice Endpoint
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 To test a voice, a sample message needs to be provided.
 
 .. list-table:: 
@@ -341,12 +341,16 @@ To test a voice, a sample message needs to be provided.
 
    * - URL
      - Required Values
+     - Other Values
      - HTTP Methods
    * - https://tingting.io/api/system/test/voice/
      - message
+     - voice_input
      - POST
      
 To test a voice, a sample :literal:`message` needs to be provided.
+You can also specify the voice to test your message. The options are: :literal:`np_rija`, :literal:`np_prasanna` and :literal:`np_binod`.
+If nothing is provided, np_rija is used. 
 
 
      
