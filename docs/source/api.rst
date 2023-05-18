@@ -393,6 +393,9 @@ You can also add your own message or audio. If you want to change the existing  
        "message" : "Hi, this is to notify that you have been selected for the election"
    }
    
+Tags
+~~~~~
+   
 Furthermore, you can also add available tags to your message using variables and passing it inside curly braces.
 
 Sample Tags:
