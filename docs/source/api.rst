@@ -72,7 +72,7 @@ Sample Input:
 .. code-block:: json
 
 	{		"refresh":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4NDQ4NDA4NSwiaWF0IjoxNjg0Mzk3Njg1LCJqdGkiOiJiYjg0MjU0MDllYTE0ODZiYmYyMTgyYjkyNTZjMmY3MiIsInVzZXJfaWQiOjF9.4KPNR53AEp8dmq0ch1uVkFXlDaSWBt12_JlYn-XtAcI"
-   }
+	}
 
 
 
