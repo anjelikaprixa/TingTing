@@ -237,7 +237,7 @@ Buy Number Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/phone_numbers
+   * - https://tingting.io/api/system/phone_numbers/
      - SID
      - POST
      
