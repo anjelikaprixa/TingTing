@@ -641,7 +641,7 @@ You can also add your own message or audio. If you want to change the existing  
 .. code-block:: json
 
    {
-       "message" : "Hi, this is to notify that you have been selected for the election"
+       "message" : "नमस्कार, हजुरलाई टिङ्टिंगमा हजुरलाई स्वगात छ"
    }
    
 Tags
