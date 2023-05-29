@@ -641,7 +641,7 @@ You can also add your own message or audio. If you want to change the existing  
 .. code-block:: json
 
    {
-       "message" : "नमस्कार, हजुरलाई टिङ्टिंगमा हजुरलाई स्वगात छ"
+       "message" : "नमस्कार, टिङ्टिंगमा हजुरलाई स्वगात छ"
    }
    
 Tags
