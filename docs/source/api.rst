@@ -641,7 +641,7 @@ You can also add your own message or audio. If you want to change the existing  
 .. code-block:: json
 
    {
-       "message" : "नमस्कार, टिङ्टिंगमा हजुरलाई स्वगात छ"
+       "message" : "नमस्कार, टिङ्टिंगमा हजुरलाई स्वागत छ "
    }
    
 Tags
@@ -651,7 +651,7 @@ Furthermore, you can also add available tags to your message using variables and
 
 Sample Tags:
 
-Message: “Hi  :literal:`{tags_name}`, you are :literal:`{tags_age}` years old and your salary is :literal:`{tags_salary}`.”
+Message: “नमस्कार, :literal:`{tags_name}`, हजुर :literal:`{tags_age}` वर्षको हुनुहुन्छ र हजुरको सालारी :literal:`{tags_salary}` छ |”
 
 Schedule Campaign
 ~~~~~~~~~~~~~~~~~~
@@ -670,7 +670,7 @@ Sample Input for personal message:
 .. code-block:: json
 
    {
-       "message": "sample text message"
+       "message": "नमस्कार, टिङ्टिंगमा हजुरलाई स्वागत छ"
    }
    
 Sample input for personal audio:
