@@ -555,7 +555,7 @@ Campaign Details Endpoint
      - HTTP Methods
    * - https://tingting.io/api/system/campaigns/<campaign_id>/details
      - Campaign ID
-     - DEL
+     - GET
      
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to delete.
 
