@@ -929,7 +929,7 @@ Number Edit Endpoint
      - HTTP Methods
    * - https://tingting.io/api/system/number/<number_id>/
      - Number ID, Values to change
-     - POST
+     - PUT
 
 Note that the <number_id> in the URL should be replaced with the ID of the number you want to edit the details of.  The attributes of the number you want to change also needs to be provided.
 
