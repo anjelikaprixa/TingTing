@@ -697,17 +697,17 @@ Sample input to re-run a campaign based on the status:
 
 This will start the campaign for all numbers whose status is failed and hungup.
 
+Note: If you are re-running a campaign that has Message and Audio input set, you need to set :literal:`priority` to indicate use of either :literal:`message` or :literal:`audio`. However, if you want to use new message or audio, you can supply it without priority with the attribute :literal:`message` or :literal:`audio` respectively.
 
 Sample input encompassing all attributes:
 
 .. code-block:: json
 
    {
-	"message": "Hi {tags_name}, you are {tags_age} years old and your salary is {tags_salary}.",
-	"aud_file" :   "path/containing/audio.mp3",
+	"priority": "audio",
 	"voice_input": "np_prasanna",
 	"schedule_date": "2023-05-09T17:07",
-	"status": "failed"
+	"status": ["failed","hungup"]
    }
 
 Sample Output:
