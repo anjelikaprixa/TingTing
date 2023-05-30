@@ -705,7 +705,6 @@ Sample input encompassing all attributes:
    {
 	"message": "Hi {tags_name}, you are {tags_age} years old and your salary is {tags_salary}.",
 	"aud_file" :   "path/containing/audio.mp3",
-	"priority": "message",
 	"voice_input": "np_prasanna",
 	"schedule_date": "2023-05-09T17:07",
 	"status": "failed"
