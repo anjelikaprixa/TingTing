@@ -617,25 +617,12 @@ Begin Campaign Endpoint
      - Other Values
      - HTTP Methods
    * - https://tingting.io/api/system/campaigns/<campaign_id>/begin/
-     - message
-     - audio,voice_input, schedule_date,aud_file,priority,status
+     - message or aud_file
+     - voice_input, schedule_date, status
      - POST
   
 Note that the <campaign_id> in the URL should be replaced with the ID of the campaign you want to begin.
-
-Note: that if you have a text message as well as an audio in your campaign, you need to define which one your campaign should start with using the priority attribute.
-
-The options are :literal:`message` and :literal:`audio`.
-
-Sample Input:
-
-
-.. code-block:: json
-
-   {
-       "priority": "message"
-   }
-   
+  
 You can also add your own message or audio. If you want to change the existing  :literal:`message` or  :literal:`aud_file`, you can do so by providing your own.
 
 .. code-block:: json
