@@ -802,7 +802,7 @@ Add Number to a Campaign Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/number/<campaign_id>
+   * - https://tingting.io/api/system/campaigns/number/<campaign_id>/
      - Campaign ID, number
      - POST
   
@@ -969,7 +969,7 @@ Send OTP Endpoint
      - Required Values
      - Other Values
      - HTTP Methods
-   * - https://tingting.io/api/system/send/otp
+   * - https://tingting.io/api/system/send/otp/
      - number, message, sms_send_options
      - otp_length, otp_options
      - POST
