@@ -678,6 +678,44 @@ Sample Input:
        "message": "Message to Convey",
 	"voice_input": "np_prasanna"
    }
+
+Run Campaign for Individual numbers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want to run a campaign for individual numbers  in the following format:
+
+.. code-block:: json
+
+   {
+       "message" : "नमस्कार, टिङ्टिंगमा हजुरलाई स्वागत छ ",
+       "individual": [2, 3]
+   }
+
+Note: IDs of individual numbers associated in the Campaign needs to be provided as the value of :literal:`individual` attribute.
+
+Sample Input for Individual Number Campaign:
+
+ 
+.. code-block:: json
+
+   {
+       "message": "परिचालन गर्छौं",
+       "individual": [305, 306],
+   }
+   
+Sample Output for Individual Number Campaign:
+
+.. code-block:: json
+
+   {
+    "status": 200,
+    "success": true,
+    "message": "Campaign is running!!",
+    "errors": [],
+    "data": {
+        "hold amount": "3 credits on hold for Individual Number campaign."
+    }
+   }
    
 Re-run a Campaign
 ~~~~~~~~~~~~~~~~~~
