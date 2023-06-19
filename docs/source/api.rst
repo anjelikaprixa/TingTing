@@ -700,7 +700,7 @@ Sample Input for Individual Number Campaign:
 
    {
        "message": "नमस्कार, टिङ्टिंगमा हजुरलाई स्वागत छ ",
-       "individual": [305, 306],
+       "individual": [305, 306]
    }
    
 Sample Output for Individual Number Campaign:
