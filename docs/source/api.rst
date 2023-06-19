@@ -699,7 +699,7 @@ Sample Input for Individual Number Campaign:
 .. code-block:: json
 
    {
-       "message": "परिचालन गर्छौं",
+       "message": "नमस्कार, टिङ्टिंगमा हजुरलाई स्वागत छ ",
        "individual": [305, 306],
    }
    
