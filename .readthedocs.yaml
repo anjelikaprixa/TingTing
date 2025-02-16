@@ -4,6 +4,8 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.9"
+  commands:
+    - pip install -v .
 
 sphinx:
   configuration: docs/source/conf.py
@@ -19,7 +21,3 @@ python:
 formats:
   - pdf
   - epub
-
-# This will make pip output more verbose
-build.commands:
-  - pip install -v .
