@@ -10,4 +10,16 @@ sphinx:
 
 python:
   install:
-    - path: .
+    - requirements: docs/requirements.txt
+    - method: pip
+      path: .
+      extra_requirements:
+        - docs
+
+formats:
+  - pdf
+  - epub
+
+# This will make pip output more verbose
+build.commands:
+  - pip install -v .
