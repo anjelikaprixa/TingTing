@@ -20,7 +20,7 @@ Login Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/accounts/login/
+   * - https://app.tingting.io/api/accounts/login/
      - email, password  
      - POST
 
@@ -67,7 +67,7 @@ User Detail Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/accounts/user_details/
+   * - https://app.tingting.io/api/accounts/user_details/
      -   
      - GET
 
@@ -105,7 +105,7 @@ Refresh Token Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/accounts/token/refresh/
+   * - https://app.tingting.io/api/accounts/token/refresh/
      - refresh
      - POST
     
@@ -146,7 +146,7 @@ Owned Numbers Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/owned/phone_numbers
+   * - https://app.tingting.io/api/system/owned/phone_numbers
      - 
      - GET
   
@@ -193,7 +193,7 @@ Numbers List Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/phone_numbers
+   * - https://app.tingting.io/api/system/phone_numbers
      - 
      - GET
   
@@ -237,7 +237,7 @@ Buy Number Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/phone_numbers/
+   * - https://app.tingting.io/api/system/phone_numbers/
      - SID
      - POST
      
@@ -291,7 +291,7 @@ Release Number Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/phone_numbers
+   * - https://app.tingting.io/api/system/phone_numbers
      - SID
      - DEL
      
@@ -331,7 +331,7 @@ Get Campaign Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns
+   * - https://app.tingting.io/api/system/campaigns
      -   
      - GET
 
@@ -393,7 +393,7 @@ Add Campaign Endpoint
      - Required Values
      - Other Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/
+   * - https://app.tingting.io/api/system/campaigns/
      - name, services, individual_number, or send_to_number_file
      - description
      - POST
@@ -468,14 +468,14 @@ Update Campaign Endpoint
      - Required Values
      - Other Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/<campaign_id>/update
+   * - https://app.tingting.io/api/system/campaigns/<campaign_id>/update
      - Campaign ID
      - name, services, description
      - PUT
 
 To update a campaign, you'll need to provide the campaign ID in the URL of the API endpoint. In addition to the campaign ID, you'll also need to provide the new values that will replace the existing values in the campaign.
 
-https://tingting.io/api/system/campaigns/10/update/
+https://app.tingting.io/api/system/campaigns/10/update/
 
 Sample Input:
 
@@ -522,7 +522,7 @@ Delete Campaign Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/<campaign_id>/delete
+   * - https://app.tingting.io/api/system/campaigns/<campaign_id>/delete
      - Campaign ID
      - DEL
      
@@ -553,7 +553,7 @@ Campaign Details Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/<campaign_id>/details
+   * - https://app.tingting.io/api/system/campaigns/<campaign_id>/details
      - Campaign ID
      - GET
      
@@ -596,7 +596,7 @@ To test a voice, a sample message needs to be provided.
      - Required Values
      - Other Values
      - HTTP Methods
-   * - https://tingting.io/api/system/test/voice/
+   * - https://app.tingting.io/api/system/test/voice/
      - message
      - voice_input
      - POST
@@ -616,7 +616,7 @@ Begin Campaign Endpoint
      - Required Values
      - Other Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/<campaign_id>/begin/
+   * - https://app.tingting.io/api/system/campaigns/<campaign_id>/begin/
      - message or aud_file
      - voice_input, schedule_date, status
      - POST
@@ -775,7 +775,7 @@ Number List Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/number/<campaign_id>
+   * - https://app.tingting.io/api/system/campaigns/number/<campaign_id>
      - Campaign ID
      - GET
 
@@ -840,7 +840,7 @@ Add Number to a Campaign Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/number/<campaign_id>/
+   * - https://app.tingting.io/api/system/campaigns/number/<campaign_id>/
      - Campaign ID, number
      - POST
   
@@ -878,7 +878,7 @@ Delete Action Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/campaigns/number/<number_id>/delete/
+   * - https://app.tingting.io/api/system/campaigns/number/<number_id>/delete/
      - Number ID
      - DEL 
 
@@ -908,7 +908,7 @@ Number Information Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/number/<number_id>/
+   * - https://app.tingting.io/api/system/number/<number_id>/
      - Number ID
      - GET
      
@@ -951,7 +951,7 @@ Number Edit Endpoint
    * - URL
      - Required Values
      - HTTP Methods
-   * - https://tingting.io/api/system/number/<number_id>/
+   * - https://app.tingting.io/api/system/number/<number_id>/
      - Number ID, Values to change
      - PUT
 
@@ -1007,7 +1007,7 @@ Send OTP Endpoint
      - Required Values
      - Other Values
      - HTTP Methods
-   * - https://tingting.io/api/system/send/otp/
+   * - https://app.tingting.io/api/system/send/otp/
      - number, message, sms_send_options
      - otp_length, otp_options
      - POST
