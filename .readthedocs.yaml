@@ -4,8 +4,6 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.9"
-  commands:
-    - pip install -v .
 
 sphinx:
   configuration: docs/source/conf.py
@@ -15,9 +13,6 @@ python:
     - requirements: docs/requirements.txt
     - method: pip
       path: .
-      extra_requirements:
-        - docs
 
-formats:
-  - pdf
-  - epub
+# Create this file at docs/requirements.txt
+# with these contents
