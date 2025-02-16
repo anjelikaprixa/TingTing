@@ -4,4 +4,9 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "TingTing"
-
+authors = [
+    {name = "TingTing", email = "info@tingting.io"},
+]
+description = "AI That Speaks Nepali, Build for Outbound."
+version = "0.1.0"
+requires-python = ">=3.9"
