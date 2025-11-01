@@ -640,10 +640,22 @@ Sample Tags:
 
 Message: “नमस्कार, :literal:`{tags_name}`, हजुर :literal:`{tags_age}` वर्षको हुनुहुन्छ र हजुरको सालारी :literal:`{tags_salary}` छ |”
 
+Length Factor
+~~~~~~~~~~~~~
+   
+You can also customize the length factor of the voice which impacts the message play speed utilizing the following format:
+
+.. code-block:: json
+
+   {
+       "length_factor": "1.4"
+   }
+
+
 Schedule Campaign
 ~~~~~~~~~~~~~~~~~~
 
-If you want to schedule a campaign you need to pass a schedule date and time  in the following format:
+If you want to schedule a campaign you need to pass a schedule date and time in the following format:
 
 .. code-block:: json
 
