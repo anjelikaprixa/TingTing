@@ -584,6 +584,44 @@ Sample Output:
     	}
 
 
+Campaign Report Download Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - https://app.tingting.io/api/system/campaigns/report/download/
+     - campaign_id (query parameter)
+     - GET
+
+By accessing this endpoint, you can download the report for a specific campaign. Provide the campaign ID as a query parameter.
+
+Example: ``https://app.tingting.io/api/system/campaigns/report/download/?campaign_id={{campaign_id}}``
+
+Note that the :literal:`campaign_id` query parameter should be set to the ID of the campaign whose report you want to download. The response is typically a file download (e.g., Excel or CSV).
+
+
+Campaign Report Summary Endpoint
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table:: 
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - URL
+     - Required Values
+     - HTTP Methods
+   * - https://app.tingting.io/api/system/campaigns/report/summary/
+     - 
+     - GET
+
+By accessing this endpoint, you can retrieve a summary of campaign reports. This returns an overview of report data for your campaigns.
+
+
 Test Voice Endpoint
 ~~~~~~~~~~~~~~~~~~~~
 To test a voice, a sample message needs to be provided.
